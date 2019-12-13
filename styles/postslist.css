@@ -3,7 +3,6 @@ body {
     background-size: 100% 100%;
   }
 
-  /**** post card style start ****/
 
 .card-class {
     display: inline-flex;
@@ -59,9 +58,6 @@ body {
     padding-right: 20px;
 }
 
-/**** post card style end ****/
-
-/**** delete confirm Modal Box style start ****/
 
 .confirm-dialog {
     display: inline-block;
@@ -79,7 +75,7 @@ body {
 }
 
 .class-yes-btn {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: auto auto;
@@ -94,7 +90,7 @@ body {
     margin-left: 10px;
   }
   .class-no-btn {
-    background-color: red; /* Green */
+    background-color: red;
     border: none;
     color: white;
     padding: auto auto;
@@ -116,4 +112,3 @@ body {
      text-align: center;
 }
 
-/**** delete confirm Modal Box style end ****/

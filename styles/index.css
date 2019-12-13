@@ -33,12 +33,9 @@ body {
   border: 2px outset gainsboro ;
 }
 
-/*** Create Post Modal Box Style start ***/
 
 #post-modal-content {
   width: 70%;
   min-width: 400px;
   min-height: 200px;
 }
-
-/*** Create Post Modal Box Style end ***/

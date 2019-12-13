@@ -3,7 +3,6 @@ html, body {
   width: 100%;
 }
 
-/***** header style start *****/
 
 .header-container {
     display: flex;
@@ -31,19 +30,15 @@ html, body {
     color: black;
 }
 
-.header-button {   
+.header-button {
     text-align: center;
     background-color: blue;
     margin: 5px;
     border: 2px outset gainsboro ;
 }
 
-/***** header style end *****/
-
-/***** All Modal Box common style start *****/
 
 * {box-sizing: border-box}
-/* Full-width input fields */
   input[type=text], input[type=password], textarea {
     width: 100%;
     box-sizing: 25px;
@@ -60,7 +55,6 @@ html, body {
     margin-bottom: 5px;
 }
 
-/* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus, textarea:focus {
   background-color: #ddd;
   outline: auto blue    ;
@@ -75,7 +69,6 @@ textarea{
   text-align: left;
 }
 
-/* The Modal (background) */
 .modal {
     display: none;
     position: fixed;
@@ -89,16 +82,15 @@ textarea{
     background-color: #000000bf;
 }
 
-/* Modal Content */
+
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto;
   border: 1px solid #888;
-  width: 25%; /* Could be more or less, depending on screen size */
+  width: 25%;
   height: auto;
 }
 
-/* Style the horizontal ruler */
 .hr-class {
     border: 1px solid gray;
     margin-bottom: 25px;
@@ -118,14 +110,14 @@ textarea{
     margin-bottom: 15px;
 }
 
-label {    
+label {
     display: inline-block;
     margin-bottom: 5px;
     margin-top: 10px;
     text-align: left;
 }
 
-/* The Close Button (x) */
+
 .close {
   position: absolute;
   right: 35px;
@@ -141,16 +133,13 @@ label {
   cursor: pointer;
 }
 
-/* Clear floats */
+
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/***** All Modal Box common style end *****/
-
-/***** Sign-in Modal Box style start *****/
 
 .class-signin-btn {
     background-color: #4CAF50; /* Green */
@@ -171,12 +160,10 @@ label {
   min-height: 350px;
 }
 
-/***** Sign-in Modal Box style end *****/
 
-/***** Sign-up Modal Box style start *****/
 
 .class-create-btn {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: auto auto;
@@ -199,7 +186,7 @@ label {
   font-size: 15px;
 }
 
-#signup-hyper-link { 
+#signup-hyper-link {
   color: blue;
   cursor: pointer;
 }
@@ -213,4 +200,3 @@ label {
   min-height: 500px;
 }
 
-/***** Sign-up Modal Box style end *****/
