@@ -1,4 +1,4 @@
-/* header html code as java script */
+/* header html*/
 
 const header =
     "<div class='col-xs-6 header-logo-col'> \
@@ -14,7 +14,7 @@ const header =
         <button type='button' class='btn btn-primary button-class header-button' onclick=\"modal_dialog('modal-signin','block')\">Sign In</button> \
     </div>";
 
-/* signup modal html code as java script */
+/* signup modal */
 
 const signup_modal =
     "<form id='signup-modal-content' class='modal-content' action=''> \
@@ -36,7 +36,7 @@ const signup_modal =
         </div> \
     </form>";
 
-/* signin modal html code as java script */
+/* signin modal */
 
 const signin_modal =
     "<form id='signin-modal-content' class='modal-content' action=''> \
@@ -62,25 +62,25 @@ const signin_modal =
         </div> \
     </form>";
 
-/* call this function on load of each page to insert common node like header and modals at run time */
+/* load common header and modal */
 
 function insert_common_object(){
     insert_header();
     insert_modal();
 }
 
-/* insert header dynamically through js */
+/* insert header*/
 function insert_header() {
     document.getElementById('header-space').innerHTML = header;
 }
 
-/* insert all the modal dynamically through js */
+/* insert modal */
 function insert_modal() {
     document.getElementById('modal-signup').innerHTML = signup_modal;
     document.getElementById('modal-signin').innerHTML = signin_modal;
 }
 
-/* function to show/hide modal using its id */
+/* open and close modal with using id and css */
 function modal_dialog(id, display) {
     document.getElementById(id).style.display= display;
  }

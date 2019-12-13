@@ -1,5 +1,4 @@
-
-/* create post modal html code as java script */
+/* create post modal */
 
 const create_post_modal =
     "<form id='post-modal-content' class='modal-content' action=''> \
@@ -17,7 +16,7 @@ const create_post_modal =
         </div> \
     </form>";
 
-/* insert all the create post modal (availale only on index.html) dynamically through js */
+/* insert all the create post modal*/
 function insert_post_modal() {
     document.getElementById('modal-create-post').innerHTML = create_post_modal;
 }
