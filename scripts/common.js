@@ -1,7 +1,7 @@
-/* header html*/
+/* header html code as java script */
 
 const header =
-  "<div class='col-xs-6 header-logo-col'> \
+    "<div class='col-xs-6 header-logo-col'> \
         <div class='row'> \
             <h1 class='header-text' >ScriBBler</h1> \
         </div> \
@@ -10,18 +10,18 @@ const header =
         </div> \
     </div> \
     <div class='col-xs-6 header-button-col'> \
-        <button type='button' class='btn btn-primary button header-button' onclick=\"modal_dialog('modal-signup','block')\">Sign Up</button> \
-        <button type='button' class='btn btn-primary button header-button' onclick=\"modal_dialog('modal-signin','block')\">Sign In</button> \
+        <button type='button' class='btn btn-primary button-class header-button' onclick=\"modal_dialog('modal-signup','block')\">Sign Up</button> \
+        <button type='button' class='btn btn-primary button-class header-button' onclick=\"modal_dialog('modal-signin','block')\">Sign In</button> \
     </div>";
 
-/* signup modal */
+/* signup modal html code as java script */
 
 const signup_modal =
-  "<form id='signup-modal-content' class='modal-content' action=''> \
+    "<form id='signup-modal-content' class='modal-content' action=''> \
         <div class='modal-container'> \
             <div class='modal-title'>Get Started</div> \
             <span onclick=\"modal_dialog('modal-signup','none')\" class='close' ><i class='fa fa-times modal-close' aria-hidden='true'></i></span> \
-            <hr class='hr'> \
+            <hr class='hr-class'> \
             <label for='name'>Name</label> \
             <input id='name' type='text' placeholder='Enter your name' name='name' required > \
             <label for='username'>Username</label> \
@@ -31,25 +31,25 @@ const signup_modal =
             <label for='password-repeat'>Confirm Password</label> \
             <input type='password' placeholder='Re-enter your password' name='password-repeat' required> \
             <div class='clearfix'> \
-                <button id='signup_btn' type='submit' class='signin-btn'>Sign Up</button> \
+                <button id='id_signup_btn' type='submit' class='class-signin-btn'>Sign Up</button> \
             </div> \
         </div> \
     </form>";
 
-/* signin modal */
+/* signin modal html code as java script */
 
 const signin_modal =
-  "<form id='signin-modal-content' class='modal-content' action=''> \
+    "<form id='signin-modal-content' class='modal-content' action=''> \
         <div class='modal-container'> \
             <div class='modal-title'>Welcome Back!</div> \
             <span onclick=\"modal_dialog('modal-signin','none')\" class='close' ><i class='fa fa-times modal-close' aria-hidden='true'></i></span> \
-            <hr class='hr'> \
+            <hr class='hr-class'> \
             <label for='username'>Username</label> \
             <input type='text' placeholder='Enter your username' name='username' required> \
             <label for='password'>Password</label> \
             <input type='password' placeholder='Enter your password' name='password' required> \
             <div class='clearfix'> \
-                <button id='signin_btn' type='submit' class='signin-btn'>Sign In</button> \
+                <button id='id_signin_btn' type='submit' class='class-signin-btn'>Sign In</button> \
             </div> \
             <div class='modal-suffix-msg'> \
                 <b> \
@@ -62,25 +62,25 @@ const signin_modal =
         </div> \
     </form>";
 
-/* load common header and modal */
+/* call this function on load of each page to insert common node like header and modals at run time */
 
-function insert_common_object() {
-  insert_header();
-  insert_modal();
+function insert_common_object(){
+    insert_header();
+    insert_modal();
 }
 
-/* insert header*/
+/* insert header dynamically through js */
 function insert_header() {
-  document.getElementById("header-space").innerHTML = header;
+    document.getElementById('header-space').innerHTML = header;
 }
 
-/* insert modal */
+/* insert all the modal dynamically through js */
 function insert_modal() {
-  document.getElementById("modal-signup").innerHTML = signup_modal;
-  document.getElementById("modal-signin").innerHTML = signin_modal;
+    document.getElementById('modal-signup').innerHTML = signup_modal;
+    document.getElementById('modal-signin').innerHTML = signin_modal;
 }
 
-/* open and close modal with using id and css */
+/* function to show/hide modal using its id */
 function modal_dialog(id, display) {
-  document.getElementById(id).style.display = display;
-}
+    document.getElementById(id).style.display= display;
+ }
