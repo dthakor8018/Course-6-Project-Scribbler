@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ScriBBler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>ScriBBler</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <!-- bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montez&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <!-- User defined stylesheets -->
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
 
-  <!-- User defined stylesheets -->
-  <link rel="stylesheet" href="./styles/common.css">
-  <link rel="stylesheet" href="./styles/index.css">
+  <body onload="insert_common_object();insert_post_modal()">
+    <!--common modal and header -->
 
-</head>
+    <div id="header-space" class="container header-container"></div>
 
-<body onload="insert_common_object();insert_post_modal()">
+    <div id="modal-signup" class="modal"></div>
 
-<!-- code for modal and header are added dynamically from java script in below wrapper div -->
-<!-- header start -->
-<div id="header-space" class='container header-container'></div>
-<!-- header end -->
+    <div id="modal-signin" class="modal"></div>
 
-<!-- SignUp form Modal Start -->
-<div id="modal-signup" class="modal"></div>
-<!-- SignUp form Modal End -->
+    <div id="modal-create-post" class="modal"></div>
 
-<!-- SignIn form Modal Start -->
-<div id="modal-signin" class="modal"></div>
-<!-- SignIn form Modal End -->
+    <div class="post-buttons-div">
+      <button
+        type="button"
+        class="btn btn-primary button post-button"
+        onclick="window.location.href='html/postslist.html'"
+      >
+        All Posts
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary button post-button"
+        onclick="modal_dialog('modal-create-post','block')"
+      >
+        Create Post
+      </button>
+    </div>
 
-<!-- Create Post form Modal Start -->
-<div id="modal-create-post" class="modal"></div>
-<!-- Create Post form Modal End -->
-
-<!-- home page content -->
-<div class="post-buttons-div" >
-  <button type="button" class="btn btn-primary button-class post-button" onclick="window.location.href='html/postslist.html'">All Posts</button>
-  <button type="button" class="btn btn-primary button-class post-button" onclick="modal_dialog('modal-create-post','block')">Create Post</button>
-</div>
-
-<!-- all project javascript files -->
-<script src="./scripts/common.js"></script>
-<script src="./scripts/index.js"n></script>
-</body>
-
+    <!-- all javascript files -->
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js" n></script>
+  </body>
 </html>
