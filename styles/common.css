@@ -124,7 +124,7 @@ label {
 .close {
   position: absolute;
   right: 35px;
-  top: 15px;
+  top: 0.5rem;
   font-size: 40px;
   font-weight: bold;
   color: #f1f1f1;
