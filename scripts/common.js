@@ -28,8 +28,8 @@ const signup_modal =
             <input type='text' placeholder='Enter your username' name='username' required> \
             <label for='password'>Password</label> \
             <input type='password' placeholder='Enter your password' name='password' required> \
-            <label for='password-repeat'>Confirm Password</label> \
-            <input type='password' placeholder='Re-enter your password' name='password-repeat' required> \
+            <label for='confirm-password'>Confirm Password</label> \
+            <input type='password' placeholder='Re-enter your password' name='confirm-password' required> \
             <div class='clearfix'> \
                 <button id='id_signup_btn' type='submit' class='class-signin-btn'>Sign Up</button> \
             </div> \

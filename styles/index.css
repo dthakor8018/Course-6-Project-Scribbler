@@ -15,7 +15,7 @@ body {
   max-height: 100%;
 }
 
-.post-buttons-div {
+.post-buttons {
   display: inline-block;
   position: absolute;
   top: 50%;
