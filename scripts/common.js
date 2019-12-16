@@ -64,7 +64,7 @@ const signin_modal =
 
 /* load common header and modal */
 
-function insert_common_components(){
+function insert_common_components() {
     insert_header();
     insert_modal();
 }
@@ -82,5 +82,5 @@ function insert_modal() {
 
 /* open and close modal with using id and css */
 function modal_dialog(id, display) {
-    document.getElementById(id).style.display= display;
- }
+    document.getElementById(id).style.display = display;
+}

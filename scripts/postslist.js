@@ -34,24 +34,24 @@ let node_to_delete = null;
 
 /* hide or display modal for confirmation of delete */
 function confirm_modal(show, node) {
-    if( show ) {
-        document.getElementById('id04').style.display='block';
-    } else {
-        document.getElementById('id04').style.display='none';
-    }
+  if (show) {
+    document.getElementById('id04').style.display = 'block';
+  } else {
+    document.getElementById('id04').style.display = 'none';
+  }
 
-    node_to_delete = node;
+  node_to_delete = node;
 }
 
 /* delete a post with id save in global var node_to_delete */
 function delete_post() {
-    // document.getElementById(node_id).remove();
-    node_to_delete.remove();
+  // document.getElementById(node_id).remove();
+  node_to_delete.remove();
 }
 
 /* single post card to dynamically insert at load time */
 const post_card_template =
-    "<div class='post-author'> \
+  "<div class='post-author'> \
         <p class='post-author-p'></p> \
     </div> \
     <div class='post-content'> \
@@ -70,29 +70,29 @@ const post_card_template =
     </div>";
 
 /* create post cards dynamically using post_card_template and posts array */
-function create_post_cards(){
+function create_post_cards() {
 
-    /* execute for each element in post array */
-    posts.forEach(elm => {
+  /* execute for each element in post array */
+  posts.forEach(elm => {
 
-        /* create post card div node*/
-      const div = document.createElement('div');
+    /* create post card div node*/
+    const div = document.createElement('div');
 
-      /* set class for post card div node fir style */
-        div.className = "card-class";
+    /* set class for post card div node fir style */
+    div.className = "card-class";
 
-        /* insert post card template code inside create div */
-        div.innerHTML = post_card_template;
+    /* insert post card template code inside create div */
+    div.innerHTML = post_card_template;
 
-        /* set author, title and content of respective element from create div */
-        div.getElementsByClassName('post-author-p')[0].innerHTML = elm.author;
-        div.getElementsByClassName('post-title-p')[0].innerHTML = elm.title;
-        div.getElementsByClassName('post-content-p')[0].innerHTML = elm.content;
+    /* set author, title and content of respective element from create div */
+    div.getElementsByClassName('post-author-p')[0].innerHTML = elm.author;
+    div.getElementsByClassName('post-title-p')[0].innerHTML = elm.title;
+    div.getElementsByClassName('post-content-p')[0].innerHTML = elm.content;
 
-        /* insert this post card to post board on the html page */
-        document.getElementById('post-board').appendChild(div);
+    /* insert this post card to post board on the html page */
+    document.getElementById('post-board').appendChild(div);
 
-    });
+  });
 
 }
 
