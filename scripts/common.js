@@ -64,7 +64,7 @@ const signin_modal =
 
 /* load common header and modal */
 
-function insert_common_object(){
+function insert_common_components(){
     insert_header();
     insert_modal();
 }

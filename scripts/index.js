@@ -11,7 +11,7 @@ const create_post_modal =
             <label for='contents'>Contents</label> \
             <textarea rows='10' cols='50' placeholder='Enter the contents of your post' name='contents' required></textarea> \
             <div class='create-btn-div'> \
-                <button id='id_create_btn' type='submit' class='class-create-btn'>Create</button> \
+                <button id='id_create_btn' type='submit' class='create-btn'>Create</button> \
             </div> \
         </div> \
     </form>";
